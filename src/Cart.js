@@ -15,7 +15,7 @@ function Cart({initialItems}){
       <hr/>
       <div>
         {initialItems.map(item => (
-          <CartItem key= {item.iid} {...item} /> 
+          <CartItem key= {item.id} {...item} /> 
         ))}
       </div>
 
