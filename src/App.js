@@ -1,6 +1,6 @@
 import React from "react";
 import Cart from './Cart'
-import "./styles.css";
+import "./App.css";
 
 
 const items = [
