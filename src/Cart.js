@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CartItem from './CartItem';
+import './Cart.css'
 
 function Cart({initialItems}){
 
@@ -24,8 +25,8 @@ setItems(newItems);
 
   return(
     <div className='Cart'>
-      <h1> Shopping Cart</h1>
-      <hr/>
+      <h1 className= 'Cart__header'> Shopping Cart</h1>
+      <hr className= 'Cart__line'/>
       <div>
         {items.map(item => (
           <CartItem key= {item.id} updateQty= {updateQty} {...item} /> 
